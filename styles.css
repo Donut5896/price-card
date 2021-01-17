@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+:root {
+  --primary-color: hsl(236, 72%, 79%);
+  --very-light-blue: hsl(240, 78%, 98%);
+  --light-grey-blue: hsl(234, 14%, 74%);
+  --grey-blue: hsl(233, 13%, 49%);
+  --dark-grey-blue: hsl(235, 45%, 64%);
+}
+body {
+  max-height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+}
+header {
+  border: 1px solid #222;
+  justify-content: center;
+  display: block;
+  align-items: center;
+}
+.head {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+.header-center {
+  justify-content: center;
+  align-items: center;
+  border: 1px solid grey;
+  display: flex;
+}
+.toggle i {
+  font-size: 32px;
+  color: blue;
+  padding: 2rem;
+}
+
+.main {
+  background-image: url("./images/bg-top.svg");
+  border: 1px solid red;
+}
+.price-card {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr 1fr;
+  background: #fff;
+  margin: auto 20rem;
+  border: 2px solid green;
+}
+
+.section {
+  border: 2px solid blue;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: auto;
+  width: 90%;
+  border-radius: 10px;
+}
+.card {
+  border: 2px solid var(--grey-blue);
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: auto;
+  align-items: center;
+  transition: 1s;
+  border-radius: 10px;
+}
+.card:hover {
+  transform: scaleY(1.1);
+  background: var(--dark-grey-blue);
+}
+.card h5 {
+  padding-top: 2rem;
+}
+.year {
+  display: none;
+}
+.month {
+  font-size: 36px;
+  padding: 2rem;
+}
+
+.card span {
+  border-top: solid 1px var(--light-grey-blue);
+  padding: 1rem;
+}
+.card p {
+  border-top: solid 1px var(--light-grey-blue);
+  border-bottom: solid 1px var(--light-grey-blue);
+  padding: 1rem;
+}
+.learn-more {
+  margin: 1.5rem;
+  background: transparent;
+  padding: 0.45rem 2.5rem;
+  display: inline-block;
+  text-transform: uppercase;
+}
+
+.attribution {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  padding: 32px;
+}
