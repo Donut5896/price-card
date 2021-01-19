@@ -75,6 +75,9 @@ header {
   background: var(--dark-grey-blue);
   color: #fff;
 }
+.container {
+  display: flex;
+}
 .card {
   border: 2px solid yellow;
   display: flex;
@@ -88,8 +91,7 @@ header {
 .year {
   display: none;
 }
-.year.show{
-
+.show {
   display: block;
   padding: 2rem;
   font-size: 36px;
