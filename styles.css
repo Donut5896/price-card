@@ -36,7 +36,9 @@ header {
   align-items: center;
   display: flex;
 }
-
+h2 {
+  color: #00cc99;
+}
 input,
 label {
   display: inline-block;
